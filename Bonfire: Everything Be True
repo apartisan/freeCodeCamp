@@ -11,12 +11,7 @@ function every(collection, pre) {
       count++;
     }
   }
-  if (count == collection.length){
-    return true;
-  } else {
-    return false;
-  }
- 
+ return count == collection.length;
 }
 
 every([{"user": "Tinky-Winky", "sex": "male"}, {"user": "Dipsy", "sex": "male"}, {"user": "Laa-Laa", "sex": "female"}, {"user": "Po", "sex": "female"}], "sex");
